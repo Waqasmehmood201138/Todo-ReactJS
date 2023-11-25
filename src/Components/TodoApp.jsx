@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import Todolist from "./Todolist";
 
@@ -54,7 +56,7 @@ const TodoApp = (props) => {
                 <header>Todo App</header>
                 <div className="inputField">
                     <input value={inputList} onChange={handleChange} type="text" placeholder="Add your new todo" />
-                    <button  type="button" onClick={listOfItems} disabled={inputList.length<1}><i className="fas fa-plus"></i></button>
+                    <button  type="button" onClick={listOfItems} disabled={inputList.length<1}> <FontAwesomeIcon icon={faPlus} /></button>
                 </div>
 
                 <ul className="todoList ">

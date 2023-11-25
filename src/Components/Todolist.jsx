@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Todolist = (props)=>{
 
@@ -10,7 +12,7 @@ const Todolist = (props)=>{
                                 {props.text}
 
                                 <button onClick={()=>{
-                                    props.onSelect(props.id)}} className="icon" type="text"><i className="fas fa-trash"></i> </button>
+                                    props.onSelect(props.id)}} className="icon" type="text"><FontAwesomeIcon icon={faTrash} /></button>
 
                                 </li>
                                
